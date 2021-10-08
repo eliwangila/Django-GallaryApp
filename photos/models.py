@@ -29,4 +29,29 @@ class Image(models.Model):
     
     def save_image(self):
         self.save()
+
+    @classmethod
+    def search_by_category(cls,search_term):
+        image = cls.objects.filter(category__name__icontains=search_term)
+        return image
+        
+    def delete_image(self):
+        self.delete()
+    
+    @classmethod
+    def update_image(cls, id, value):
+        cls.objects.filter(id=id).update(image=value)
+        
+    # @classmethod
+    # def get_image_by_id(cls, id):
+    #     image = cls.objects.filter(id=id).all()
+    #     return image
+    
+    # @classmethod
+    # def filter_by_location(cls, location):
+    #     img_location = Image.objects.filter(location__name=location).all()
+    #     return img_location
+
+    # class Meta:
+    #     ordering = ['date']
     
