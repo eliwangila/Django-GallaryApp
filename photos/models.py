@@ -42,16 +42,16 @@ class Image(models.Model):
     def update_image(cls, id, value):
         cls.objects.filter(id=id).update(image=value)
         
-    # @classmethod
-    # def get_image_by_id(cls, id):
-    #     image = cls.objects.filter(id=id).all()
-    #     return image
+    @classmethod
+    def get_image_by_id(cls, id):
+        image = cls.objects.filter(id=id).all()
+        return image
     
-    # @classmethod
-    # def filter_by_location(cls, location):
-    #     img_location = Image.objects.filter(location__name=location).all()
-    #     return img_location
+    @classmethod
+    def filter_by_location(cls, location):
+        img_location = Image.objects.filter(location__name=location).all()
+        return img_location
 
-    # class Meta:
-    #     ordering = ['date']
+    class Meta:
+        ordering = ['date']
     
