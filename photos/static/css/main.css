@@ -1,5 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 body{
-    background-color: rgb(28, 184, 111);
+    /* background-color: rgb(28, 184, 111); */
+    background-color: #100B00;
+    
+}
+
+h2{
+  font-size: 50px!important;
+  font-family: 'Roboto', sans-serif;
+}
+
+p{
+  font-size: 30px !important;
+  font-family: 'Lato', sans-serif;
+}
+
+#home{
+  font-weight: bold !important;
+}
+#loc{
+  font-weight: bold!important;
 }
   .row {margin: 0 -5px;}
   
@@ -10,7 +32,7 @@ body{
   }
   
 .dropdown-item:hover{
-    background-color: blueviolet;
+    background-color: #655F4F;
     color: white;
 }
   
