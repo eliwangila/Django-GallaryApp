@@ -1,8 +1,7 @@
 
-from django.shortcuts import render,redirect
+from django.shortcuts import render
 from django.http import Http404
 from .models import Location,Category,Image
-from .forms import ImageForm
 from django.core.exceptions import ObjectDoesNotExist
 
 
