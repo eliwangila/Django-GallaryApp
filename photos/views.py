@@ -36,14 +36,3 @@ def view_by_location(request,location):
     except ObjectDoesNotExist:
         raise Http404()
     return render(request, 'location.html',{"location": image_location, 'message':location})
-
-def add_image(request):
-    if request.method == "POST":
-        form = ImageForm(request.POST, request.FILES)
-        if form.is_valid():
-            form.save()
-            return redirect('/')
-        else:
-            return False
-    
-    return render(request, 'form.html', {'form':ImageForm,})
