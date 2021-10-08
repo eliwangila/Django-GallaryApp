@@ -29,13 +29,13 @@ def search_images(request):
         message = "You haven't searched for any term"
         return render(request, 'search.html',{'message':message})
     
-# def view_by_location(request,location):
-#     try:
-#         image_location = Image.filter_by_location(location)
-#         message = location
-#     except ObjectDoesNotExist:
-#         raise Http404()
-#     return render(request, 'location.html',{"location": image_location, 'message':location})
+def view_by_location(request,location):
+    try:
+        image_location = Image.filter_by_location(location)
+        message = location
+    except ObjectDoesNotExist:
+        raise Http404()
+    return render(request, 'location.html',{"location": image_location, 'message':location})
 
 # def add_image(request):
 #     if request.method == "POST":
