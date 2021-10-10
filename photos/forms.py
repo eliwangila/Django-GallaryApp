@@ -10,11 +10,10 @@ class ImageForm(forms.ModelForm):
 CATEGORIES =( 
     ("1", "Cars"), 
     ("2", "Food"), 
-    ("3", "Travel"),  
-    ("4", "People"), 
-    ("5", "Animals"), 
-    ("6", "Nature"), 
-    ("7", "Sports"), 
+    ("3", "Travel"),   
+    ("4", "Animals"), 
+    ("5", "Nature"), 
+    ("6", "Sports"), 
 ) 
 
 class ImagesForm(forms.Form):

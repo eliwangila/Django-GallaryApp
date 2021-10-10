@@ -12,16 +12,19 @@
 <br>
 <div class="container-fluid">
 
+
+
   <!-- Jumbotron -->
-  <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+  <div class="card card-image" style="background-position:center;">
+  </div>
+  <div class="text-white text-center rgba-stylish-strong py-2 px-2">
     <div class="py-5">
 
       <!-- Content -->
 
       <h2 class="card-title h2 my-4 py-2">Welcome To The Gallery App</h2>
-      <p class="mb-4 pb-2 px-md-5 mx-md-5">When words become unclear, I shall focus with photographs. <br> When images
-        become inadequate, I shall be content with silence.</p>
-
+      <p class="mb-4 pb-2 px-md-5 mx-md-5">When words become unclear, I shall focus with photographs. <br>
+        When images become inadequate, I shall be content with silence.</p>
 
     </div>
   </div>
@@ -43,8 +46,8 @@
     </div>
     <div class="col-md-5 col-sm-6 col-lg-6">
       <!-- Basic dropdown -->
-      <a class="btn btn-primary dropdown-toggle mr-4" type="button" data-toggle="dropdown" aria-haspopup="true"
-        aria-expanded="false">View Images By Location</a>
+      <!-- <a class="btn btn-primary dropdown-toggle mr-4" type="button" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">View Images By Location</a> -->
 
       <div class="dropdown-menu dropdown-primary">
         {% for items in location %}
@@ -93,8 +96,7 @@
 
           </div>
         </div>
-        <h3 class="embed-responsive-item text-center mr-4 mt-2" style="text-decoration: underline;">{{ items.image_name
-          }}</h3>
+        <h3 class="embed-responsive-item text-center mr-4 mt-2" style="text-decoration: underline; color:black;">{{items.image_name }}</h3>
         <span class="mr-4 text-center">
           <h5>{{ items.description }}</h5>
         </span>
@@ -105,8 +107,7 @@
                   fa-calendar-alt"></i> {{ items.date }}</a>
           <a type="button" class="btn-floating btn-sm btn-tw"><i class="fas
                   fa-fighter-jet"></i> {{ items.location }}</a>
-          <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fas fa-grip-horizontal"></i> {{
-            items.category }}</a>
+          <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fas fa-grip-horizontal"></i> {{items.category }}</a>
           <div>
             <button type="button" class="btn btn-outline-info btn-rounded btn-md ml-4"
               onclick="myFunction('{{items.id}}.url')">Copy Link</button>
