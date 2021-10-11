@@ -10,8 +10,9 @@ This is a Django web application that is for displaying my photos taken from dif
 
 
 ### Live site
-* view site from the link below
-[https://photosgallary124.herokuapp.com/]()
+*view site from the link below*
+
+ *https://photosgallary124.herokuapp.com/*
 
 ## Technologies Used
  * Django
