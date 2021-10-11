@@ -2,9 +2,16 @@
 
 ## Author
 
-[eliwangila](https://github.com/eliwangila)
+- Created by **Eli Wangila** on 9/10/2021
+
+### Description
 
 This is a Django web application that is for displaying my photos taken from different locations and then put into different categories for viewing and searching.
+
+
+### Live site
+* view site from the link below
+[https://photosgallary124.herokuapp.com/]()
 
 ## Technologies Used
  * Django
@@ -56,8 +63,6 @@ To get the code..
   ```bash
   python manage.py test photos
   ```
-Open the application on your browser `http://127.0.0.1:8000/`.
-
 
 ## Known Bugs
 * There are no known bugs currently but pull requests are allowed incase you spot a bug
