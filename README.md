@@ -10,6 +10,7 @@ This is a Django web application that is for displaying my photos taken from dif
  * Django
  * Python-3.8.12
  * Bootstrap
+ * Heroku
  
 
 ## Interactive Input
@@ -26,7 +27,7 @@ To get the code..
 
 1. Cloning the repository:
   ```bash
-  https://github.com/eliwangila/
+  https://github.com/eliwangila/Django-GallaryApp
   ```
 2. Creating virtual environment:
   ```bash
@@ -55,7 +56,7 @@ To get the code..
   ```bash
   python manage.py test photos
   ```
-Open the application on your browser `127.0.0.1:5000`.
+Open the application on your browser `http://127.0.0.1:8000/`.
 
 
 ## Known Bugs

@@ -17,7 +17,7 @@
   <!-- Jumbotron -->
   <div class="card card-image" style="background-position:center;">
   </div>
-  <div class="text-white text-center rgba-stylish-strong py-2 px-2">
+  <div class="text-white text-center  py-2 px-2" style="background-color:#282d32;" id="back" >
     <div class="py-5">
 
       <!-- Content -->
@@ -45,9 +45,6 @@
       </form>
     </div>
     <div class="col-md-5 col-sm-6 col-lg-6">
-      <!-- Basic dropdown -->
-      <!-- <a class="btn btn-primary dropdown-toggle mr-4" type="button" data-toggle="dropdown" aria-haspopup="true"
-        aria-expanded="false">View Images By Location</a> -->
 
       <div class="dropdown-menu dropdown-primary">
         {% for items in location %}
@@ -130,6 +127,37 @@
   <!--Modal: Name-->
 
   {% endfor %}
+</div>
+
+<div class="footer-dark">
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-6 col-md-3 item">
+                  <h3>Services</h3>
+                  <ul>
+                      <li><a href="#">Web design</a></li>
+                      <li><a href="#">Development</a></li>
+                      <li><a href="#">Hosting</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-6 col-md-3 item">
+                  <h3>About</h3>
+                  <ul>
+                      <li><a href="#">Company</a></li>
+                      <li><a href="#">Team</a></li>
+                      <li><a href="#">Careers</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-6 item text">
+                  <h3>GEEKAY STUDIOS</h3>
+                  <p>If you are out there shooting, things will happen for you. <br> If you’re not out there, you’ll only hear about it.</p>
+              </div>
+              <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+          </div>
+          <p class="copyright">Geekay © 2021</p>
+      </div>
+  </footer>
 </div>
 <br>
 
